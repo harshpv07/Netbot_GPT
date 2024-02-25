@@ -1,0 +1,30 @@
+{
+    "messages": [
+    {"input": "Create a VLAN 7 named database on port 0/1" , "output" : "enable, conf t, vlan 7, name database, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 7"},
+    {"input": "Create a VLAN 10 named voice_vlan on port 0/3" , "output" :  "enable, conf t, vlan 10, name voice_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 10"},
+    {"input": "Create a new VLAN 5 named control_vlan on port 0/1" , "output" :  "enable, conf t, vlan 5, name control_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 5"},
+    {"input": "Establish a VLAN 5 named control_vlan on port 0/1" , "output" : "enable, conf t, vlan 5, name control_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 5"},
+    {"input": "Establish a VLAN 6 named sample_vlan on port 0/2" ,"output" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/2, switchport mode access, switchport access vlan 6"},
+    {"input" : "Establish a VLAN 6 named sample_vlan on ethernet port 0/2" , "output" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/3, switchport mode access, switchport access vlan 7"},
+    {"input" : "Establish a VLAN 6 named sample_vlan on ethernet port 0/2", "output" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/3, switchport mode access, switchport access vlan 7"},
+    {"input" : "Assign IP address of 192.168.1.1 and subnet mask of 255.0.0.0 to port 0/1" , "output" : "enable, conf t, ethernet 0/1, ip address 192.168.1.1 255.0.0.0, no shutdown"},
+    {"input" : "Assign IP address of 192.168.1.2 and subnet mask of 255.255.0.0 to port 0/1" , "output" : "enable, conf t, ethernet 0/1, ip address 192.168.1.2 255.255.0.0, no shutdown"},
+    {"input" : "Assign IP address of 192.168.1.5 and subnet mask of 255.255.255.255 to port 0/3" , "output" : "enable, conf t, ethernet 0/3, ip address 192.168.1.5 255.255.255.255, no shutdown"},
+    {"input" : "Create a new port 0/1 with ip address of 192.168.0.4 255.255.0.0" , "output" : "enable, conf t, ethernet 0/1, ip address 192.168.0.4 255.255.0.0, no shutdown"},
+    {"input" : "Create a new port 0/1 with ip address of 192.168.0.4 255.255.0.0" , "output" : "enable, conf t, ethernet 0/1, ip address 192.168.0.4 255.255.0.0, no shutdown"}
+]}
+
+
+{"prompt": "Create a VLAN 7 named database on port 0/1" , "completion" : "enable, conf t, vlan 7, name database, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 7"}
+{"prompt": "Create a VLAN 10 named voice_vlan on port 0/3" , "completion" :  "enable, conf t, vlan 10, name voice_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 10"}
+{"prompt": "Create a new VLAN 5 named control_vlan on port 0/1" , "completion" :  "enable, conf t, vlan 5, name control_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 5"}
+{"prompt": "Establish a VLAN 5 named control_vlan on port 0/1" , "completion" : "enable, conf t, vlan 5, name control_vlan, conf t, interface Ethernet 0/1, switchport mode access, switchport access vlan 5"}
+{"prompt": "Establish a VLAN 6 named sample_vlan on port 0/2" ,"completion" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/2, switchport mode access, switchport access vlan 6"}
+{"prompt" : "Establish a VLAN 6 named sample_vlan on ethernet port 0/2" , "completion" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/3, switchport mode access, switchport access vlan 7"}
+{"prompt" : "Establish a VLAN 6 named sample_vlan on ethernet port 0/2", "completion" : "enable, conf t, vlan 6, name sample_vlan, conf t, interface Ethernet 0/3, switchport mode access, switchport access vlan 7"}
+{"prompt" : "Assign IP address of 192.168.1.1 and subnet mask of 255.0.0.0 to port 0/1" , "completion" : "enable, conf t, ethernet 0/1, ip address 192.168.1.1 255.0.0.0, no shutdown"}
+{"prompt" : "Assign IP address of 192.168.1.2 and subnet mask of 255.255.0.0 to port 0/1" , "completion" : "enable, conf t, ethernet 0/1, ip address 192.168.1.2 255.255.0.0, no shutdown"}
+{"prompt" : "Assign IP address of 192.168.1.5 and subnet mask of 255.255.255.255 to port 0/3" , "completion" : "enable, conf t, ethernet 0/3, ip address 192.168.1.5 255.255.255.255, no shutdown"}
+{"prompt" : "Create a new port 0/1 with ip address of 192.168.0.4 255.255.0.0" , "completion" : "enable, conf t, ethernet 0/1, ip address 192.168.0.4 255.255.0.0, no shutdown"}
+{"prompt" : "Create a new port 0/1 with ip address of 192.168.0.4 255.255.0.0" , "completion" : "enable, conf t, ethernet 0/1, ip address 192.168.0.4 255.255.0.0, no shutdown"}
+
